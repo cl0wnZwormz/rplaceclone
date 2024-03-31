@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Cozy gray background */
+}
+
+.canvas-container {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Use RGBA for transparency */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  border: 1px solid black;
+  border-radius: 10px; /* Rounded corners for the canvas */
+  display: block;
+  margin: 0 auto; /* Center the canvas horizontally */
+  background-color: #fff; /* White background for the canvas */
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px; /* Rounded corners for the color palette */
+  background-color: rgba(255, 196, 119, 0.8); /* Cozy gray background with transparency */
+  padding: 10px; /* Add padding for better spacing */
+  width: 1500px;
+  margin: 0 auto; /* Center the palette horizontally */
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.color.selected {
+  border-color: black;
+}
+
+.cooldown {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.cooldown.active {
+  display: block;
+}
